@@ -1,0 +1,266 @@
+@import url("./fonts/alegreya/style.css");
+@import url("./fonts/playfair-display/style.css");
+@import url("./fonts/scriptina/style.css");
+:root {
+  --primary-color: #FFFFFF;
+  --primary-text-color: #FFFFFF;
+  --secondary-text-color: #CECECE;
+  --link-primary-color: #FFFFFF;
+  --link-secondary-color: #35332F;
+  --text-secondary-color: #56534C;
+  --text-tertiary-color: #A47D5E;
+  --text-gold-color: #DFC690;
+  --border-color: #D9D8D0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+img.resp {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-primary-color);
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.text {
+  font-family: 'Alegreya', serif;
+  color: var(--text-secondary-color);
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section > main {
+  width: 75vw;
+}
+
+.section-recipes {
+  height: 100vh;
+  background-image: url("../img/bg-bread-board.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-recipes > main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 80%;
+  height: 65%;
+  background-color: #FFFDF2;
+  -webkit-box-shadow: 0 6px 50px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 6px 50px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card > .card-image-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+}
+
+.card > .card-image-wrapper > .card-handle {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  right: -24px;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transform: translate(0) translateY(-50%);
+          transform: translate(0) translateY(-50%);
+  background-image: url("../img/card-divider.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  -webkit-box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+.card > .card-image-wrapper > .card-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-image: url("../img/pancakes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card > .card-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
+  height: 100%;
+  padding: 6%;
+  background-color: #FFFDF2;
+  background-image: url("../img/bg-windmill.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
+}
+
+.card-content > h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.card-content > h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-tertiary-color);
+  margin: 0 0 2rem;
+}
+
+.card-content > p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 1.8rem;
+  margin: 1rem auto;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+.card-content > .recipes-nav-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-content > .recipes-nav-buttons > img {
+  margin: 0 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card-content > .recipes-nav-buttons > img:first-child {
+  margin-left: 0;
+}
+
+.card-content > .recipes-nav-buttons > img:last-child {
+  margin-right: 0;
+}
+
+.recipes-time {
+  position: absolute;
+  font-family: "Alegreya";
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  background-image: url("../img/bg-recipes-time.png");
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 0px 30px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0px 30px 10px rgba(0, 0, 0, 0.3);
+  z-index: 20;
+}
+
+.recipes-time > h1 {
+  font-size: 6rem;
+  color: var(--text-gold-color);
+  line-height: 3rem;
+  margin: 0;
+}
+
+.recipes-time > h2 {
+  font-size: 1.4rem;
+  color: #A57C5C;
+  text-transform: uppercase;
+}
+
+.recipes-time > h3 {
+  font-size: 1.2rem;
+  color: #999288;
+}
+/*# sourceMappingURL=main-styles.css.map */

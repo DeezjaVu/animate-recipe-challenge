@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Scriptina";
+  src: url("./SCRIPTIN.ttf") format("truetype"),
+    url('./scriptin-webfont.woff') format('woff'),
+    url('./scriptin-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
