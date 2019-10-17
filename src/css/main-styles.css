@@ -1,6 +1,6 @@
-@import url("./fonts/scriptina/style.css");
-@import url("./fonts/playfair-display/style.css");
 @import url("./fonts/alegreya/style.css");
+@import url("./fonts/playfair-display/style.css");
+@import url("./fonts/scriptina/style.css");
 :root {
   --primary-color: #FFFFFF;
   --primary-text-color: #FFFFFF;
@@ -183,56 +183,40 @@ section > main {
 }
 
 .card-content > p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   line-height: 1.8rem;
   margin: 1rem auto;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
 }
 
-.card-content > .recipes-navbar {
+.card-content > .recipes-nav-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.recipes-navbar > .arrow-left, .recipes-navbar > .arrow-right {
-  width: 48px;
-  height: 48px;
-}
-
-.recipes-navbar > .arrow-left {
-  margin-right: 1rem;
-}
-
-.recipes-navbar > .arrow-right {
-  margin-left: 1rem;
-}
-
-.recipes-navbar > .recipes-nav-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   overflow: hidden;
 }
 
-.recipes-navbar > .recipes-nav-buttons > img {
+.card-content > .recipes-nav-buttons > img {
   margin: 0 1.5rem;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.recipes-navbar > .recipes-nav-buttons > img:first-child {
+.card-content > .recipes-nav-buttons > img:first-child {
   margin-left: 0;
 }
 
-.recipes-navbar > .recipes-nav-buttons > img:last-child {
+.card-content > .recipes-nav-buttons > img:last-child {
   margin-right: 0;
 }
 

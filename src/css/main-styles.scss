@@ -1,6 +1,6 @@
-@import url("./fonts/scriptina/style.css");
-@import url("./fonts/playfair-display/style.css");
 @import url("./fonts/alegreya/style.css");
+@import url("./fonts/playfair-display/style.css");
+@import url("./fonts/scriptina/style.css");
 
 @mixin section-bg($imgUrl) {
     background-image: url($imgUrl);
@@ -188,40 +188,19 @@ section > main {
     }
     
     > p {
+        flex: 1;
         line-height: 1.8rem;
-        // max-width: 80%;
         margin: 1rem auto;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    }
-
-    >.recipes-navbar {
-        display: flex;
-        margin-top: auto;
-        // justify-self: flex-end;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-}
-
-.recipes-navbar {
-
-    >.arrow-left, >.arrow-right {
-        width: 48px;
-        height: 48px;
-    }
-
-    >.arrow-left {
-        margin-right: 1rem;
-    }
-
-    >.arrow-right {
-        margin-left: 1rem;
+        overflow-y: auto;
     }
 
     >.recipes-nav-buttons {
         display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         width: 100%;
+        // margin-top: auto;
         overflow: hidden;
     }
     
@@ -237,6 +216,7 @@ section > main {
             margin-right: 0;
         }
     }
+
 }
 
 .recipes-time {
